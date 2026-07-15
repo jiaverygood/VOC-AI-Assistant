@@ -52,7 +52,7 @@ export function VocInputForm({ onAnalyzed }: { onAnalyzed: (entry: VocEntry) => 
         <button
           type="submit"
           disabled={!rawText.trim() || isSubmitting}
-          className="flex shrink-0 items-center gap-2 rounded-none bg-accent-primary px-5 py-2 text-sm font-semibold text-accent-primary-text transition-opacity hover:opacity-90 disabled:opacity-50"
+          className="flex shrink-0 items-center gap-2 rounded-none bg-cta-submit px-5 py-2 text-sm font-semibold text-cta-submit-text transition-opacity hover:opacity-90 disabled:opacity-50"
         >
           {isSubmitting && <Spinner />}
           분석하기

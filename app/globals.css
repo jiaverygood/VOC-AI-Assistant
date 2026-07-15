@@ -14,6 +14,8 @@
   --border-interactive: rgba(69, 42, 27, 0.4); /* cocoa-700 */
   --border-card: #452a1b; /* cocoa-700, 레트로 카드 잉크 보더 */
   --border-card-hover: #1b5449; /* primary-700 틸 hover */
+  --cta-submit: #2e7c6e; /* primary-500 틸 — design.md §⑥ "Teal 버튼" 변형, "분석하기" 전용 */
+  --cta-submit-text: #fdf8ec; /* cream-50 */
 }
 
 /* 다크 모드 값은 design.md에 정의가 없어 브랜드 4색 안에서 명암을 뒤집어 자체 도출했다. */
@@ -29,6 +31,8 @@
   --border-interactive: rgba(253, 248, 236, 0.4);
   --border-card: #74b3a4; /* primary-300 틸 */
   --border-card-hover: #ee9a63; /* accent-300 */
+  --cta-submit: #74b3a4; /* primary-300, 어두운 배경 대비용 밝은 틸 */
+  --cta-submit-text: #2e1b10; /* cocoa-900 */
 }
 
 @theme inline {
@@ -43,6 +47,8 @@
   --color-border-interactive: var(--border-interactive);
   --color-border-card: var(--border-card);
   --color-border-card-hover: var(--border-card-hover);
+  --color-cta-submit: var(--cta-submit);
+  --color-cta-submit-text: var(--cta-submit-text);
   --font-sans: var(--font-noto-sans-kr);
 }
 
