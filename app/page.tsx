@@ -54,12 +54,21 @@ export default function VocAssistantPage() {
 
   return (
     <div className="min-h-screen bg-surface-page">
-      <header className="mx-auto flex max-w-4xl flex-col gap-1 px-4 pt-10 pb-6">
-        <h1 className="text-2xl font-black text-text-primary">VOC AI Assistant</h1>
-        <p className="text-base text-text-secondary">VOC 원문을 붙여넣으면 감정·요약·키워드·카테고리·긴급도를 바로 정리해드려요.</p>
+      <header className="flex items-center justify-between border-b border-border-subtle px-6 py-4">
+        <div className="flex items-center gap-4">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo1.png" alt="Good Day Surf logo" className="h-16 w-16 shrink-0 rounded-full object-cover" />
+          <div>
+            <p className="text-lg font-bold text-text-primary">Good Day Surf</p>
+            <h1 className="text-xs font-medium text-text-secondary">VOC AI Assistant</h1>
+          </div>
+        </div>
+        <p className="text-xs text-text-secondary">Good Waves, Good Vibes</p>
       </header>
 
       <main className="mx-auto flex max-w-4xl flex-col gap-8 px-4 pb-16">
+        <p className="pt-8 text-base text-text-secondary">VOC 원문을 붙여넣으면 감정·요약·키워드·카테고리·긴급도를 바로 정리해드려요.</p>
+
         <section className="flex flex-col gap-3">
           <h2 className="text-sm font-bold text-text-primary">VOC 입력</h2>
           <VocInputForm onAnalyzed={handleAnalyzed} />
