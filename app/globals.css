@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* 디자인 토큰 — good-day-surf-brand/design.md 브랜드 팔레트(크림·코코아·틸·오렌지) 기준.
+   VOC AI Assistant는 Good Day Surf Bali 전용 서비스라 이 팔레트가 기본값이다. */
+:root {
+  --surface-page: #fdf8ec; /* cream-50 */
+  --surface-card: #faf0dc; /* cream-300 */
+  --text-primary: #452a1b; /* cocoa-700 */
+  --text-secondary: #6b4630; /* cocoa-500 */
+  --accent-primary: #de672b; /* accent-500 (선셋 오렌지, CTA 전용) */
+  --accent-primary-text: #ffffff;
+  --accent-ring: rgba(46, 124, 110, 0.35); /* primary-500 틸 */
+  --border-subtle: #e0cb9e; /* cream-700 */
+  --border-interactive: rgba(69, 42, 27, 0.4); /* cocoa-700 */
+  --border-card: #452a1b; /* cocoa-700, 레트로 카드 잉크 보더 */
+  --border-card-hover: #1b5449; /* primary-700 틸 hover */
+}
+
+/* 다크 모드 값은 design.md에 정의가 없어 브랜드 4색 안에서 명암을 뒤집어 자체 도출했다. */
+[data-theme="dark"] {
+  --surface-page: #2e1b10; /* cocoa-900 */
+  --surface-card: #452a1b; /* cocoa-700 */
+  --text-primary: #fdf8ec; /* cream-50 */
+  --text-secondary: #e0cb9e; /* cream-700 */
+  --accent-primary: #ee9a63; /* accent-300, 어두운 배경 대비용 밝은 오렌지 */
+  --accent-primary-text: #2e1b10;
+  --accent-ring: rgba(116, 179, 164, 0.4); /* primary-300 틸 */
+  --border-subtle: rgba(224, 203, 158, 0.25);
+  --border-interactive: rgba(253, 248, 236, 0.4);
+  --border-card: #74b3a4; /* primary-300 틸 */
+  --border-card-hover: #ee9a63; /* accent-300 */
+}
+
+@theme inline {
+  --color-surface-page: var(--surface-page);
+  --color-surface-card: var(--surface-card);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-primary-text: var(--accent-primary-text);
+  --color-accent-ring: var(--accent-ring);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-interactive: var(--border-interactive);
+  --color-border-card: var(--border-card);
+  --color-border-card-hover: var(--border-card-hover);
+  --font-sans: var(--font-noto-sans-kr);
+}
+
+body {
+  background: var(--color-surface-page);
+  color: var(--color-text-primary);
+}
